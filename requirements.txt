@@ -2,9 +2,7 @@ pandas
 io
 warnings
 numpy
-math
 operator
 mplsoccer
 matplotlib
-streamlit
 requests
