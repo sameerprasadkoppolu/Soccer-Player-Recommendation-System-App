@@ -1,18 +1,9 @@
 import pandas as pd
 import io
 import warnings
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
-from sklearn.decomposition import PCA
-from sklearn.pipeline import Pipeline
-import numpy as np
 from sklearn import set_config
 import numpy as np
-from minisom import MiniSom
 from math import sqrt
-from scipy.spatial.distance import correlation, braycurtis, cosine
-from tqdm import tqdm
-from scipy.spatial.distance import pdist
-from sklearn.metrics.pairwise import pairwise_distances
 import operator
 from mplsoccer import Radar, FontManager, grid
 import matplotlib.pyplot as plt
