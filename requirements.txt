@@ -1,7 +1,1 @@
-pandas
-warnings
-numpy
-operator
 mplsoccer
-matplotlib
-requests
