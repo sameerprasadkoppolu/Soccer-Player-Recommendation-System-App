@@ -1,7 +1,6 @@
 import pandas as pd
 import io
 import warnings
-from sklearn import set_config
 import numpy as np
 from math import sqrt
 import operator
