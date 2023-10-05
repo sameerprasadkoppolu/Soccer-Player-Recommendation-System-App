@@ -161,3 +161,22 @@ if option != None:
     
     if st.session_state.counter >= len(fig_list):
         st.session_state.counter = 0
+
+#Scrollable Bar for Description of Metric Names
+metrics_desc = pd.DataFrame({"Name": ['Non-PK Goals', 'npxG', 'Sh_Standard', 'Ast', 'xAG', 'npxG+xAG', 'SCA', 'PrgC', 'PrgP', 'Succ_Take', 'Att Pen_Touches', 'PrgR','Int', 'Clr', 'Tkl', 'Blk', 'Won_Aerial'], 
+                             "Description": ['Non-Penalty Goals', 'Non-Penalty Expected Goals', 'No. of Shots Taken (Excluding Penalty Kicks)', 'Assists', 'Expected Assisted Goals', 'Non-Penalty Expected Goals + Expected Assisted Goals',
+                                            'Shot Creating Actions', 'Progressive Carries', 'Progressive Passes Completed', 'Successful Take-Ons', 'Touches in the Attacking Penalty Area',
+                                            'Progressive Passes Received', 'Interceptions', 'Clearances', 'Tackles', 'Blocks', 'Number of Aerial Duels Won']})
+
+div = st.markdown(
+    """
+    <div style="overflow-y: auto;">
+    ... Your content here ...
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+div.write(st.dataframe(metrics_desc))
+
+st.write(div)
