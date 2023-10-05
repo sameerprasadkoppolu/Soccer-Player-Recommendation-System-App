@@ -168,15 +168,10 @@ metrics_desc = pd.DataFrame({"Name": ['Non-PK Goals', 'npxG', 'Sh_Standard', 'As
                                             'Shot Creating Actions', 'Progressive Carries', 'Progressive Passes Completed', 'Successful Take-Ons', 'Touches in the Attacking Penalty Area',
                                             'Progressive Passes Received', 'Interceptions', 'Clearances', 'Tackles', 'Blocks', 'Number of Aerial Duels Won']})
 
-div = st.markdown(
+st.write(
     """
-    <div style="overflow-y: auto;">
     Description of Fields in Radar Plot
-    </div>
-    """,
-    unsafe_allow_html=True,
+    """
 )
 
-div.write(st.dataframe(metrics_desc))
-
-st.write(div)
+st.write(st.dataframe(metrics_desc))
