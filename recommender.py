@@ -171,7 +171,7 @@ metrics_desc = pd.DataFrame({"Name": ['Non-PK Goals', 'npxG', 'Sh_Standard', 'As
 div = st.markdown(
     """
     <div style="overflow-y: auto;">
-    ... Your content here ...
+    Description of Fields in Radar Plot
     </div>
     """,
     unsafe_allow_html=True,
