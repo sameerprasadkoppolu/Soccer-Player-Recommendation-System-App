@@ -168,10 +168,6 @@ metrics_desc = pd.DataFrame({"Name": ['Non-PK Goals', 'npxG', 'Sh_Standard', 'As
                                             'Shot Creating Actions', 'Progressive Carries', 'Progressive Passes Completed', 'Successful Take-Ons', 'Touches in the Attacking Penalty Area',
                                             'Progressive Passes Received', 'Interceptions', 'Clearances', 'Tackles', 'Blocks', 'Number of Aerial Duels Won']})
 
-st.write(
-    """
-    Description of Fields in Radar Plot
-    """
-)
+st.write("Description of Fields in Radar Plot")
 
-st.write(st.dataframe(metrics_desc))
+st.dataframe(metrics_desc)
