@@ -128,8 +128,11 @@ def plot_top_10(p):
 st.write("""
 # Soccer Player Recommendation System
 
-This app predicts the Top-10 Similar Players for a Given Player         
+This Application Recommends the Top-10 Most Similar Players for a Given Player
 """)
+
+st.write("The Player Information and Stats are from the EPL, La Liga, Bundesliga, Ligue 1, Serie A, Eredivisie, and Liga Portugal taken at the end of the 2022-23 Season")
+
 
 option = st.selectbox('Select a Player', df['Player + Squad'])
 
