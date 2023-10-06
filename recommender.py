@@ -140,6 +140,7 @@ st.write('You selected:', option)
 
 st.subheader("The Top 10 Most Similar Players are: ")
 
+st.write(st.session_state)
 
 if option != None:
     fig_list = plot_top_10(option)
