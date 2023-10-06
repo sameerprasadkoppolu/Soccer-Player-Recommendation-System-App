@@ -140,6 +140,8 @@ st.write('You selected:', option)
 
 st.subheader("The Top 10 Most Similar Players are: ")
 
+if "counter" not in st.session_state:
+        st.session_state.counter = 0
 st.write(st.session_state)
 
 if option != None:
