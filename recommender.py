@@ -141,6 +141,13 @@ st.write('You selected:', option)
 st.subheader("The Top 10 Most Similar Players are: ")
 
 if option != None:
+    #Adding this
+    rec_list = top_ten(option)
+    rec_df = pd.DataFrame()
+    rec_df['Similarity Rank'] = list(range(1, 11))
+    rec_df['Player Name'] = rec_list
+
+    
     fig_list = plot_top_10(option)
 
     col1, col2, col3 = st.columns([0.25, 0.659, 0.099])
