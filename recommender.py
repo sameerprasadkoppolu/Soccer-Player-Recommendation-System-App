@@ -146,6 +146,7 @@ if option != None:
     rec_df = pd.DataFrame()
     rec_df['Similarity Rank'] = list(range(1, 11))
     rec_df['Player Name'] = rec_list
+    st.table(rec_df)
 
     
     fig_list = plot_top_10(option)
